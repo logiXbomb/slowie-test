@@ -1,0 +1,22 @@
+{
+  "name": "frontendchallenge",
+  "version": "1.0.0",
+  "description": "challenge for exzeo",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "seth lowie",
+  "license": "ISC",
+  "dependencies": {
+    "koa-static": "^1.5.2",
+    "koa.io": "0.0.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.1.0",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-less": "^3.0.5",
+    "gulp-watch-less": "^1.0.1"
+  }
+}
