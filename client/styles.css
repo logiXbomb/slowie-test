@@ -1,6 +1,10 @@
 body {
   margin-top: 75px;
 }
+html {
+  margin: 0;
+  font-family: co-headline;
+}
 .songCardWrapper {
   padding: 25px;
   height: 250px;
@@ -27,6 +31,9 @@ body {
   -webkit-transition: font-size 0.5s, opacity 0.5s;
   transition: font-size 0.5s, opacity 0.5s;
 }
+.songInfo > p:last-child {
+  font-size: 1em;
+}
 .songCard:hover img {
   height: 200px;
   opacity: 0.2;
@@ -34,4 +41,7 @@ body {
 .songCard:hover .songInfo {
   font-size: 1.5em;
   opacity: 1;
+}
+.form-group {
+  padding-top: 10px;
 }

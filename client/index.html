@@ -8,6 +8,8 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.14.3/ui-bootstrap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.14.3/ui-bootstrap-tpls.min.js"></script>
+        <script src="https://use.typekit.net/emq7hns.js"></script>
+        <script>try{Typekit.load({ async: true });}catch(e){}</script>
         <link rel="stylesheet" href="styles.css">
 
         <script src="app/app.js"></script>
@@ -28,15 +30,13 @@
               </button>
               <a class="navbar-brand" href="#">Front End Challenge</a>
             </div>
-            <div class="navbar-right">
-                <div class="form-group">
-                    <input type="text" ng-model="albumSearch" class="form-control" placeholder="Search">
-                </div>
-            </div>
-
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
+                <div class="navbar-right">
+                    <div class="form-group">
+                        <input type="text" ng-model="albumSearch" class="form-control searchBox" placeholder="Title or Artist">
+                    </div>
+                </div>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
         </nav>
@@ -44,6 +44,7 @@
            <div class="songCard" ng-click="top.openCard(song)">
                 <div class="songInfo">
                     <p class="text-center">{{ song["im:artist"].label }}</p>
+                    <p class="text-center">{{ song["im:price"].label }}</p>
                 </div>
                <img class="center-block" ng-src="{{ song['im:image'][2].label }}" alt="">
                <p class="text-center">{{ song["im:name"].label }}</p>

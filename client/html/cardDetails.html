@@ -1,12 +1,15 @@
-<div class="modal-header">
+<div class="modal-header text-center">
     <h3 class="modal-title">{{ d.card.title.label }}</h3>
 </div>
 <div class="modal-body cardDetail row">
-    <img class="col-md-4" ng-src="{{ d.card['im:image'][2].label }}" alt="">
-    <div class="col-md-8">
-        <p>Released: {{ d.card['im:releaseDate'].attributes.label }}</p>
+    <img class="col-md-4 col-sm-12 center-block" ng-src="{{ d.card['im:image'][2].label }}" alt="">
+    <div class="col-md-8 col-sm-12 text-center">
+        <p class="col-md-12">Genre: {{ d.card.category.attributes.label }}</p>
+        <p class="col-md-12">Released: {{ d.card['im:releaseDate'].attributes.label }}</p>
+        <p class="col-md-12">Record: {{ d.card.rights.label }}</p>
     </div>
 </div>
 <div class="modal-footer">
-    <button class="btn btn-primary" type="button" ng-click="d.ok()">OK</button>
+   <button class="btn btn-primary pull-left" type="button" ng-click="d.buy()">Buy: {{ d.card["im:price"].label }}</button>
+    <button class="btn btn-warning" type="button" ng-click="d.ok()">Close</button>
 </div>

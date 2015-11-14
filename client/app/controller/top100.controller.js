@@ -27,7 +27,7 @@
                         return card;
                     }
                 },
-                size: 'lg'
+                size: 'md'
             });
         }
 
