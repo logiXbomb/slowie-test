@@ -4,6 +4,7 @@
   "description": "challenge for exzeo",
   "main": "server.js",
   "scripts": {
+    "start": "node --harmony server/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "seth lowie",
